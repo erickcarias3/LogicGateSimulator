@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UiTools.Menu"
+    android:background="@drawable/giphy">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="@string/logic_tutorial"
+            android:gravity="center"
+            android:textColor="#d2691e"
+            android:id="@+id/topic"
+            android:layout_marginTop="70dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <Button
+                android:id="@+id/openSim"
+                android:layout_width="220dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/logic_simulator"
+                android:textColor="#d2691e"
+                android:textSize="34sp" />
+
+
+            <Button
+                android:id="@+id/openManual"
+                android:layout_width="220dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/manual"
+                android:textColor="#d2691e"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/openCredits"
+                android:layout_width="220dp"
+                android:layout_height="65dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="@string/credits"
+                android:textColor="#d2691e"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

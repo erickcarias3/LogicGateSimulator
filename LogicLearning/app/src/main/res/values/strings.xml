@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LogicLearning</string>
+    <string name="multilineLightBulb">Light\nBulb</string>
+    <string name="multilineAndGate">And\nGate</string>
+    <string name="multilineOrGate">Or\nGate</string>
+    <string name="multilineNotGate">Not\nGate</string>
+    <string name="title_activity_tutorial">tutorial</string>
+    <string name="credits">Credits</string>
+    <string name="erick_carias">Erick Carias</string>
+    <string name="akshay_gautam">Akshay Gautam</string>
+    <string name="ivan_medina">Ivan Medina</string>
+    <string name="moises_pantoja">Moises Pantoja</string>
+    <string name="logic_tutorial">Logic Learner</string>
+    <string name="logic_simulator">Simulator</string>
+    <string name="tutorial_sandbox">Tutorial Sandbox</string>
+    <string name="manual">Manual</string>
+    <string name="adding_removing_elements">Adding/Removing Elements:</string>
+    <string name="moving_elements">Moving Elements:</string>
+    <string name="connecting_elements">Connecting Elements</string>
+    <string name="saving_loading_a_circuit">Saving/Loading a Circuit</string>
+    <string name="running_simulations">Running Simulations:</string>
+    <string name="please_choose_the_type_of_circuit_you_want_to_add_and_press_import_to_add_it_to_the_current_circuit">Please choose the type of circuit you want to add and press import to add it to the current circuit.</string>
+    <string name="xor_gatee">XOR Gate</string>
+    <string name="xnor_gatee">XNOR Gate</string>
+    <string name="half_adder">Half Adder</string>
+    <string name="importe">IMPORT</string>
+    <string name="todo">TODO</string>
+</resources>

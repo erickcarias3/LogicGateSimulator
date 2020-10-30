@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.logisim.logiclearning.Activities.SandboxDriver">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="68dp" />
+
+    <com.logisim.logiclearning.SandboxView
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="MainView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+       <com.logisim.logiclearning.SandboxViewTools.CustomScrollView
+           android:id="@+id/scrollView1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:requiresFadingEdge="vertical"
+           android:scrollbarSize="10dp"
+           android:fadingEdgeLength="50dp"
+           >
+
+
+           <LinearLayout
+               android:layout_marginRight="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"><![CDATA[
+
+
+
+               />
+
+
+
+               />
+
+
+
+               />
+
+
+
+
+               ]]>
+
+               <Button
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+                   android:text="Add Tools"
+                   android:id="@+id/addToolButton"
+                   android:onClick="showAddToolMenu"
+                   android:layout_width="72dp"
+                   android:textSize="12sp"
+                   android:layout_weight="1"
+                   android:textColor="#d2691e"
+                   android:background="#000000"
+                   />
+
+               <ToggleButton
+                   android:id="@+id/panScreen"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_width="72dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#000000"
+                   android:textColor="#d2691e"
+                   android:textOff="Pan: Off"
+                   android:textOn="Pan:  On"
+                   android:textSize="14sp" />
+
+               <ToggleButton
+                   android:id="@+id/wireCutter"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_width="72dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#000000"
+                   android:textColor="#d2691e"
+                   android:textOff="Wire Cutter:  Off"
+                   android:textOn="Wire Cutter:  On"
+                   android:textSize="12sp" />
+
+               <Button
+                   android:id="@+id/movebutton"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:textSize="13sp"
+                   android:background="#000000"
+                   android:onClick="move"
+                   android:text="Move"
+                   android:textColor="#d2691e"
+                   />
+
+               <Button
+                   android:id="@+id/deletebutton"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#000000"
+                   android:onClick="delete"
+                   android:textSize="13sp"
+                   android:text="Delete"
+                   android:textColor="#d2691e" />
+
+               <Button
+                   android:id="@+id/Save"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#000000"
+                   android:text="Save"
+                   android:textColor="#d2691e"
+                   android:textSize="16sp" />
+
+               <Button
+                   android:id="@+id/loadButton"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#000000"
+                   android:text="Load"
+                   android:textColor="#d2691e"
+                   android:textSize="16sp" />
+
+
+               <Button
+                   android:id="@+id/clear"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_width="72dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#000000"
+                   android:onClick="clear"
+                   android:textSize="13sp"
+                   android:text="Clear Board"
+                   android:textColor="#d2691e" />
+
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:layout_height="wrap_content"
+                   android:text="Back"
+                   android:onClick="showEditMenu"
+                   android:id="@+id/editMenu"
+                   android:layout_width="72dp"
+                   android:textSize="14sp"
+                   android:layout_weight="1"
+                   android:textColor="#d2691e"
+                   android:background="#000000" />
+
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:id="@+id/addLIGHT"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Light"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:id="@+id/addSWITCH"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:textSize="12sp"
+                   android:text="Switch"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:id="@+id/addAND"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="AND"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+
+
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+                   android:id="@+id/addOR"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="OR"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:id="@+id/addNOT"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="NOT"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:id="@+id/addXOR"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="XOR"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:id="@+id/addXNOR"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="XNOR"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+
+                   android:id="@+id/addNOR"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="NOR"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+               <Button
+                   android:visibility="gone"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="3dp"
+                   android:id="@+id/addNAND"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="NAND"
+                   android:textColor="#d2691e"
+                   android:background="#000000"/>
+
+          </LinearLayout>
+
+      </com.logisim.logiclearning.SandboxViewTools.CustomScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

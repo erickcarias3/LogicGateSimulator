@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme">
+    <item android:id= "@+id/itemSwitch"
+        android:title="Switch"/>
+    <item android:id= "@+id/item0"
+        android:title="Light Bulb"/>
+    <item android:id= "@+id/item1"
+        android:title="AND Gate"/>
+    <item android:id= "@+id/item2"
+        android:title="OR Gate"/>
+    <item android:id= "@+id/item3"
+        android:title="NOT Gate"/>
+    <item android:id= "@+id/item4"
+        android:title="XOR Gate"/>
+    <item android:id= "@+id/item5"
+        android:title="XNOR Gate"/>
+    <item android:id= "@+id/item6"
+        android:title="NOR Gate"/>
+    <item android:id= "@+id/item7"
+        android:title="NAND Gate"/>
+</menu>
